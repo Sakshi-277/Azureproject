@@ -49,34 +49,21 @@ Provide the username and password to connect.
 Connect to the VM using Bastion.
 
 Switch to the root user:
-
-bash
-Copy code
 sudo su
+
 Update the package list:
-
-bash
-Copy code
 apt-get update
+
 Install NGINX:
-
-bash
-Copy code
 apt-get install nginx -y
-Navigate to the HTML directory and create an index file:
 
-bash
-Copy code
+Navigate to the HTML directory and create an index file:
 cd /var/www/html
 vim index.html
+
 Insert your HTML content, then save and exit:
 
-Press i to insert text.
-After writing, press Esc and type :wq! to save and exit.
 Restart NGINX:
-
-bash
-Copy code
 systemctl restart nginx
 
 7. Configure Firewall for External Access
